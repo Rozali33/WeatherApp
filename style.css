@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400,600,700&display=swap');
+
+body {
+    /* background-color: #FFF; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    position: relative;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+button,
+input[type='submit'] {
+	display: inline-block;
+	box-shadow: none;
+	background-color: transparent;
+	background: none;
+	cursor: pointer;
+    outline: none;
+}
+
+.section {
+    margin: 0 auto;
+    padding: 0;
+    width: 1440px;
+    height: 800px;
+    /* background-image: url('./img/bg\ 3.jpg.'); */
+    /* display: flex; */
+}
+
+/*header*/
+
+.wrapper{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 93px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.header__inner_btn {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0; */
+}
+
+/* lahguage*/
+
+.language {
+    position: relative;
+}
+
+.lang__main {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 71px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.lang__menu {
+    /* display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    /* border: 1px solid #ccc; */
+    /*padding: 5px; */
+    /* width: 71px; */
+    /* height: 44px; */
+    /*------------*/
+
+    position: absolute;
+    top: 44px; /* Высота основной кнопки */
+    width: 71px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Цвет фона */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 8px; /* Скругление углов */
+}
+
+.lang__menu li {
+    list-style: none;
+}
+
+.lang__menu a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.lang__menu a:hover {
+    background-color: #e9e9e9;
+}
+
+/* lahguage*/
+
+
+.header__btn {
+    display: none;
+    margin-left: 10px;
+    width: 71px;
+    height: 44px;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+}
+
+.header__temp {
+    display: flex;
+}
+
+.header__btn_active {
+    margin-left: 10px;
+    width: 71px;
+    height: 44px;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.header__btn_F {
+    margin-left: 10px;
+    height: 44px;
+    width: 44px;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    /* background: #8ea2ac; */
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+.header__btn_C {
+    height: 44px;
+    width: 44px;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #8ea2ac;
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* opacity: 1; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* input*/
+
+.header__form {
+    display: flex;
+    position: relative;
+    width: 375px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
+    /* border-color: #E4E3E3; */
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header__input {
+    width: 274px;
+    padding: 13px 58px 13px 15px;
+}
+
+/* .header__input::after {
+    content: url('./img/Vector.svg');
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #4C5255;
+    width: 15px;
+    height: 17px;
+} */
+
+.header__form_btn {
+    width: 101px;
+    height: 44px;
+    background: #AEB5B9;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 14px 20px 16px;
+}
+
+/* .header__form_img {
+    width: 15px;
+    height: 17px;
+    padding-top: 15px;
+    background: #4C5255;
+} */
+
+/*main*/
+
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__city {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main__date {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.weather {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.weather__value {
+    font-size: 206px;
+    font-weight: 700;
+}
+
+.weather__img {
+    margin-top: -150px;
+    margin-left: -50px;
+    width: 200px;
+    height: 200px;
+}
+
+.weather__ul {
+    margin-left: -50px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.weather__ul li {
+    padding-top: 10px;
+}
+
+.weather__days {
+    display: flex;
+    gap: 100px;
+}
+
+.weather__days_text {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.weather__days_deg {
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.map__container {
+    margin-left: 235px;
+    margin-top: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* .map {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.map {
+    /* background-color: #656; */
+    width: 375px;
+    height: 375px;
+}
+
+.map__latitude{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.map__longitude {
+    font-size: 20px;
+    font-weight: 600;
+}
