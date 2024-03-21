@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8f315f99-b2c8-4787-9945-11fce8de2c58&lang=en_US" type="text/javascript"></script>
+</head>
+<body>
+    <section class="section">
+        <div class="header">
+            <div class="header__main wrapper">
+                <div class="header__inner">
+                    <div class="header__inner_btn" href="">
+                        <div class="button" id="refreshBtn">
+                            <img src="./img/Refresh BG.svg" alt="">
+                        </div>
+                        <div class="language">
+                            <button class="lang__main">EN</button>
+                            <ul class="lang__menu">
+                                <li>
+                                    <a href="#" data__lang ='en' id="english-language">EN</a>
+                                </li>
+                                <li>
+                                    <a href="#" data__lang ='ru' id="russian-language">RU</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__temp">
+                            <button class="header__btn_F">&degF</button>
+                            <button class="header__btn_C">&degC</button>
+                        </div>
+                    </div>
+                    <form class="header__form">
+                        <input class="header__input" type="text" placeholder="Search city or ZIP">
+                        <button class="header__form_btn" type="submit">SEARCH</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="main wrapper">
+            <div class="left">
+                <div class="main__left">
+                    <h2 class="main__city"></h2>
+                    <p class="main__date"></p>
+                </div>
+                <div class="weather">
+                    <div class="weather_container">
+                        <h1 class="weather__value"></div>
+                        <img class="weather__img" src="" alt="">
+                        <ul class="weather__ul">
+                            <li class="weather__icon"></li>
+                            <li class="description"></li>
+                            <li class="feels_like"></li>
+                            <li class="wind"></li>
+                            <li class="humidity"></li>
+                        </ul>
+                    </div>
+                <ul class="weather__days">
+                    <li class="weather__days_li">
+                        <div class="weather__day1"></div>
+                        <div class="weather__temp1"></div>
+                        <div class="icon__days1"></div>
+                    </li>
+                    <li class="weather__days_li">
+                        <div class="weather__day2"></div>
+                        <div class="weather__temp2"></div>
+                        <div class="icon__days2"></div>
+                    </li>
+                    <li class="weather__days_li">
+                        <div class="weather__day3"></div>
+                        <div class="weather__temp3"></div>
+                        <div class="icon__days3"></div>
+                    </li>
+                </ul>
+            </div>           
+            <div class="right">
+                <div class="map__container">
+                    <div id="map" class="map"></div>
+                    <div class="map__latitude"></div>
+                    <div class="map__longitude"></div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    
+<script src="./js/main.js"></script>
+<script src="./js/update.js"></script>
+<script src="./js/header.js"></script>
+</body>
+</html>
